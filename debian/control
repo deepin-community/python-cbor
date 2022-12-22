@@ -1,0 +1,27 @@
+Source: python-cbor
+Section: python
+Priority: optional
+Maintainer: Agustin Henze <tin@debian.org>
+Build-Depends: debhelper (>= 9),
+ dh-python,
+ python3-all,
+ python3-setuptools,
+ python3-all-dev,
+Standards-Version: 4.0.0
+X-Python-Version: >= 2.7
+X-Python3-Version: >= 3.3
+Homepage: https://bitbucket.org/bodhisnarkva/cbor
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/python-cbor.git
+Vcs-Browser: https://anonscm.debian.org/gitweb/?p=collab-maint/python-cbor.git
+
+Package: python3-cbor
+Architecture: any
+Depends: ${python3:Depends}, ${shlibs:Depends}, ${misc:Depends}
+Description: Python3 Implementation of RFC 7049. Concise Binary Object Representation (CBOR)
+ CBOR is comparable to JSON, has a superset of JSON’s ability, but serializes
+ to a binary format which is smaller and faster to generate and parse.
+ .
+ The two primary functions are cbor.loads() and cbor.dumps(). This library
+ includes a C implementation which runs 3-5 times faster than the Python
+ standard library’s C-accelerated implementanion of JSON. This is also includes
+ a 100% Python implementation

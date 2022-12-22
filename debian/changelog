@@ -1,0 +1,30 @@
+python-cbor (1.0.0-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Drop python2 support; Closes: #937634
+
+ -- Sandro Tosi <morph@debian.org>  Mon, 14 Oct 2019 20:56:11 -0400
+
+python-cbor (1.0.0-1) unstable; urgency=medium
+
+  * New upstream version 1.0.0 (Closes: #875707)
+  * Remove patches, it's already fixed on upstream
+  * Use secure URIs on VCS fields
+  * Fix lintian warnings on short descriptions
+  * Bumped Standard-Version to 4.0.0 (no changes required)
+
+ -- Agustin Henze <tin@debian.org>  Wed, 13 Sep 2017 18:34:26 -0300
+
+python-cbor (0.1.24-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.1.24
+  * Build for all supported python versions
+  * Fix missing member m_reload on pymoduledef py3.5 version (Closes: #800888)
+
+ -- Agustin Henze <tin@debian.org>  Mon, 18 Jan 2016 08:55:53 -0300
+
+python-cbor (0.1.21-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #797928)
+
+ -- Agustin Henze <tin@debian.org>  Thu, 03 Sep 2015 15:14:20 -0300
